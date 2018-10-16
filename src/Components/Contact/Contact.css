@@ -1,0 +1,76 @@
+main.register {
+    display: grid;
+    background-color: #eee;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding-bottom: 10vh;
+}
+
+form.box {
+    padding: 3em 4em;
+    background-color: #fff;
+    border: 1px #eee solid;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.2);
+    text-align: right;
+    margin: 12vh 0;
+}
+
+form.box input {
+    margin-bottom: 1em;
+    padding-right: 2em;
+    border: none;
+    border-bottom: 2px #eee solid;
+}
+
+
+form.box input:focus {
+    outline: none;
+}
+
+input.req::placeholder {
+    color: red;
+}
+
+
+
+button.sendbtn {
+    text-align: center;
+    background-color: #4295f4;
+    border: none;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1480px) {
+    main.register {
+        grid-template-columns: auto;
+        min-height: 59vh;
+    }
+    
+    form.box {
+        min-height: 18vw;
+    }
+    
+    button.sendbtn {
+        margin-top: 3vh;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    main.register {
+        grid-template-columns: auto;
+        min-height: 60vh;
+    }
+    
+    form.box {
+        min-height: 20vw;
+    }
+    
+    button.sendbtn {
+        margin-top: 3vh;
+    }
+}

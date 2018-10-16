@@ -1,0 +1,46 @@
+nav {
+    display: inline-block;
+    margin-left: 1em;
+    width: 100vw;
+    height: 1h;
+    
+}
+
+p.navigation {
+    float: left;
+    text-align: center;
+    padding-bottom: 1em;
+    margin-right: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 0;
+    cursor: pointer;
+    
+}
+
+p.navigation.active {
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+
+@media only screen and (max-width: 750px) {
+    nav {
+        text-align: center;
+        height: 21vh;
+        margin-bottom: 2vh;
+    }
+    
+    p.navigation {
+        float: none;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    nav {
+        margin-bottom: 6vh;
+    }
+}

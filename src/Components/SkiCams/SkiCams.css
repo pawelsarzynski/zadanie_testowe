@@ -1,0 +1,69 @@
+main.container {
+    grid-area: main;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    background-color: #eee;
+    min-height: 75vh;
+    padding-bottom: 5vh;
+}
+
+main.loginContainer {
+    height: 61vh;
+    display: grid;
+    justify-content: center;
+    background-color: #eee;
+    animation-name: loading;
+    animation-duration: .9s;
+    animation-iteration-count: infinite;
+    
+}
+
+div.video {
+    display: grid;
+    grid-auto-columns: auto;
+    background-color: #fff;
+    margin-top: 2em;
+    border: 1px #eee solid;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.2);
+}
+
+video {
+    width: 40vw;
+}
+
+div.video h2 {
+    text-align: center;
+    font-family: Roboto;
+    color: #444;
+    margin-top: 0;
+}
+
+div.video p.date {
+    text-align: right;
+    color: #444;
+    margin-bottom: 0;
+    
+}
+
+
+@media only screen and (max-width: 750px) {
+    main.container {
+        grid-template-columns: auto;
+        min-height: 160vh;
+    }
+    
+    video {
+        width: 80vw;
+    }
+}
+
+@keyframes loading {
+    from {
+        color: #444;
+    }
+    to {
+        color: orange;
+    }
+}

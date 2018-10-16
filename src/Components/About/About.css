@@ -1,0 +1,71 @@
+main.about {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    background-color: #eee;
+    min-height: 66vh;
+}
+
+main.about div.aboutUs {
+    display: block;
+    background-color: #fff;
+    margin-top: 2em;
+    border: 1px #eee solid;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.2);
+    color: #444;
+    min-height: 30vh;
+}
+
+main.about div.aboutUs img {
+    max-width: 100%;
+}
+
+main.about div.aboutUs h3,p {
+    padding: 0 10px;
+    
+}
+
+@media only screen and (max-width: 1480px) {
+    main.about {
+        grid-template-columns: auto auto auto;
+        padding: 0 20vw;
+    }
+    
+    main.about div.aboutUs {
+        height: 35vh;
+    }
+    
+}
+
+@media only screen and (max-width: 1023px) {
+    main.about {
+        grid-template-columns: auto auto;
+        padding: 8vh 0;        
+    }
+    
+    main.about div.aboutUs {
+        min-height: 30vh
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    main.about {
+        grid-template-columns: auto auto;
+        min-height: 144vh;
+    }
+    
+    main.about div.aboutUs {
+        min-height: 90vh;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    main.about {
+        grid-template-columns: auto;
+    }
+    
+    main.about div.aboutUs {
+        min-height: 52vh;
+    }
+}
